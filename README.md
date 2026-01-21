@@ -1,6 +1,6 @@
 # FullStack Requirement Standard (FRS)
 
-**Version 1.0.2** | December 2025
+**Version 1.0.3** | January 2026
 
 | | |
 |---|---|
@@ -62,12 +62,12 @@ An FRS document consists of two sections:
 | `context` | Location or state where the user begins | `Login page`, `Dashboard` |
 | `trigger` | Event or action that initiates the flow | `Clicks Submit`, `Opens report` |
 | `user_outcome` | What the user achieves | `Access dashboard in 5 seconds` |
-| `business_outcome` | Measurable business value | `Reduce default rate by 15%` |
 
 ### 3.2 Optional Fields
 
 | Field | Description | Example |
 |-------|-------------|---------|
+| `business_outcome` | Measurable business value | `Reduce default rate by 15%` |
 | `priority` | Importance level | `critical` \| `high` \| `medium` \| `low` |
 | `status` | Current state | `draft` \| `approved` \| `implemented` |
 | `estimate` | Time estimate | `3d`, `2w` |
@@ -190,6 +190,7 @@ The `context` field provides starting state information. AI agents SHOULD use th
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.0.3 | January 2026 | Moved `business_outcome` field to optional field |
 | 1.0.2 | December 2025 | Added `context` field, formalized flow syntax with numbered steps, introduced dash-indented alternative paths |
 | 1.0.1 | — | Added `user_outcome` and `business_outcome` required fields |
 | 1.0.0 | — | Initial release with core specification |
